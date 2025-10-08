@@ -1,0 +1,2 @@
+# Kebap_Analysis
+Testing the hypothesis: 'The closer to the train station, the worse the kebab' Greater Copenhagen edition.
