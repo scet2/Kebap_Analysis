@@ -39,7 +39,7 @@ _Distribution of train/metro stations (red) and kebab restaurants (green) across
 Some 'lokalbane' (local railway) stations and some other stations at the study area edges were manually excluded as they provided limited additional information.
 
 ## Distance Metric
-While walking distance would be more realistic, it would also be computationally expensive. Additionally, in Copenhagen's dense urban environment the Euclidean distance will highly likely provide similar numbers. The walking distance would be more precised in absolute values, the ranking of which station is closest remains consistent across metrics. Since the analysis focuses on relative proximity rather than absolute distances, Euclidean distance is appropriate and computationally efficient.
+While walking distance would be more realistic, it would also be computationally expensive. Additionally, in Copenhagen's dense urban environment the Euclidean distance will highly likely provide similar numbers. The walking distance would be more precised in absolute values but the ranking of which station is closest remains consistent across metrics. And since the analysis focuses on relative proximity rather than absolute distances, Euclidean distance is appropriate and computationally efficient.
 
 ## Methodology
 
@@ -63,15 +63,15 @@ While walking distance would be more realistic, it would also be computationally
 _Relationship between distance to nearest station (km) and Google rating. No clear pattern visible._
 
 **Correlation Coefficients:**
-- Spearman's = 0.08 (p = 0.274)
-- Pearson's = 0.119 (p = 0.1.04)
+- Spearman's ρ = 0.08 (p = 0.274)
+- Pearson's r = 0.119 (p = 0.104)
   
 **Interpretation:**
 - There is essentially no meaningful correlation between distance and rating, as the correlation is very weak.
-- We fail to reject the null hypothesis of no relationship between distance and rating.
-- Any observed correlation could easily be due to random chance.
--  Neither of the two correlation metrics reached the statistical significance at 0.05 level. Results suggest a 'possible' weak effect that may require larger sample size to detect.
-- The hypothesis remains unproven in this context.
+-  We fail to reject the null hypothesis of no relationship between distance and rating.
+-  Any observed correlation could easily be due to random chance.
+-  Neither of the two correlation metrics reached the statistical significance at 0.05 level.
+-  The hypothesis remains unproven in this context.
 
 ## Limitations
 - Sample size: 112 Restaurants may be insufficient to detect any effect.
@@ -83,6 +83,6 @@ _Relationship between distance to nearest station (km) and Google rating. No cle
 - Google Places API
 - OpenStreetMap
 
-
+pip install -r requirements.txt
   
 
