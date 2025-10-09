@@ -1,43 +1,77 @@
-# Kebap Analysis
-Testing the hypothesis: 'The closer to the train station, the worse the kebab' a Greater Copenhagen case 'study'.
+# Kebap Analysis: Testing the Train Station Proximity Hyptohesis
+A spatial analysis project inverstigating wether kebab quality correlates with distance from train stations in Greater Copenhagen.
 
-## Overview
-Inspired by this Reddit post,[https://www.reddit.com/r/gis/comments/1iph0yy/the_closer_to_the_railway_station_the_less_tasty/](url)I decided to test this hyptohesis with real data from Greater Copenhagen. This project combines spatial analysis with some statistical testing for evaluation.
+## Porject Overview
+Inspired by this Reddit post,[this post][https://www.reddit.com/r/gis/comments/1iph0yy/the_closer_to_the_railway_station_the_less_tasty/](url), I decided to test it out with real data from Greater Copenhagen area. <br>
+This project combines:
+- Spatial analysis with QGIS and OpenStreetMap data
+- Data collection via Google Places API
+- Interactive web map visualization
 
-### Key Stats:
-- 112 kebab restaurants and 107 train+metro stations analyzed.
-- Correlation analysis + interactive web map
-- Conclusion: No statistically significant relationship found.
+### Key Results:
+- 112 kebab restaurants analyzed
+- 107 train and metro stations included
+- Correlation: No statistically significant relationship found (p > 0.05)
+- Conclusion: The hypothesis does not hold for Greater Copenhagen
 
 ## Interactive Map
+[link to map]
 
 ## Methodolgy
-### Data Collection:
-- Restaurant locations: OpenStreetMap via QGIS + manual verification
-- Station locations: OpenStreetMap via QGIS + manual verification
-- Ratings: Google Places API
+### Data Sources:
+- Kebab restaurant locations: OpenStreetMap via QGIS + manual verification
+- Metro/train station locations: OpenStreetMap via QGIS + manual verification
+- Ratings: Google Places API, automated collection
 - Area boundary: [https://data-science.dk/](url)
 
-### Analysis:
+## Analysis Pipeline
+
 1. Used Google Places API to extract ratings for each kebab place.
 2. Calculated nearest station for each kebab place using Euclidean distance.
-3. Tested correlation between distance and rating with pearson and spearman correlations +  visualized by a scatter plot.
-   Methods: Spearman(rank) and Pearson correlation, significanca level: 0.05
-5. Created interactive web map via QGIS.
+3. Tested correlation between distance and rating with pearson and spearman correlations using a significance level of 0.05.
+5. Created plots in python and interactive web map via QGIS.
 
-<details>
-<summary> A more detailed look on the analysis </summary>
-Study Area Selection:
-Living in Denmark myself I wanted to try out the hypothesis in a familiar place. Initially, only Copenhagen was chosen but it felt too limited and I decided to add the outher Copenhagen to the analysis as well. Which did not only give me a greater area to work with but also a little more versatility in the density range. 
-  Copenhagen is a very dense city and there are stations (metro or train) everywhere. You're almost always withing walking distances to a station, thus it is not unsurprising that the kebab places are as well. I hope to balance this out by pulling in the outher (more urban i guess) areas. That did not work out as well as I hoped, considering all kebab place came out to be within 2 km away from a station. 
-  We can almost figure out the transportation lines by following the kebab places.
+## Results
+**Correlation Coefficients:**
+- Spearman's p = 0.08 (p = 0.274)
+- Pearson's r = 0.119 (p = 0.1.04)
+**Interpretation:**
+- There is essentially no meaningful correlation between distance and rating, as the correlation is very weak.
+- We fail to reject the null hypothesis of no relationship between distance and rating.
+- Any observed correlation could easily be due to random chance.
+-  Neither of the two correaltion metrics reached the statistical significance at 0.05 level. Results suggest a 'possible' weak effect that may require larger sample size to detect.
+- The hypothesis remains unproven in this context.
+
+## Limitations
+- Sample size: 112 Restaurants may be insufficient to detect any effect.
+- Distance range: Limited variability due to Copenhagen's denisty.
   
-Station Filtering:
-  I had to manually check some of the 'lokal bane' stations as they were all at the edge of the area and did not really provide additional information.
+<details>
+<summary> ## Detailed Analysis Notes </summary>
 
-Distance Metric:
-As good as walking distance would have been, it would also be computanionally expensive for this big of an area, and such silly project.
-Additionally, in Copenhagen's dense urban environment the Euclidean distance will highly likely provide similar numbers. While the walking distance would be more precised in absolute values, the ranking of which station is closeset remains consistent across metrics. Since the analysis focuses on relative proximity rather than absolute distances, Euclidean distance stays approptiate and computationally efficient.
+## Study Area Selection
+I chose Greater Copenhagen for several reasons:
+- Familiartiy: As a resident of Denmark, I have local knowledge of the data
+- Data availability: Good coverage in OpenStreetMap
+- Urban diversity: Expanded from Copenhagen proper to include suburbuan areas for more vaied density patterns.
+I initially begin with Copenhagen city, but the extreme density limited variability. You're almost always within walking distance to a station, which I hoped to balance out by introducing more diverse urban patterns. However all kebab places still fell within 2km of a station.
+Interestingly, plotting the kebab locations essentially reveals the train/metro network lines. 
 
+## Station Filtering
+Some 'lokalbane' (local railway) stations and some other stations at the study area edges were manually excluded as they provided limited additional information.
+
+## Distance Metric
+While walking distance would be more realistic, it would also be computanionally expensive. Additionally, in Copenhagen's dense urban environment the Euclidean distance will highly likely provide similar numbers. The walking distance would be more precised in absolute values, the ranking of which station is closeset remains consistent across metrics. Since the analysis focuses on relative proximity rather than absolute distances, Euclidean distance stays approptiate and computationally efficient.
+
+## Conclusion
+I didn't expect any scientific reasoning to the rating-distance (non-existing) relationship. 
+- There is essentially no meaningful correlation between the two, as the spearman correlation is very close to 0.
+- The p value is bigger than 0.05 meaning we fail to reject the null hypothesis that there is no linear relationship between them. Which is backed up by the pearson correlation results.
+- The weak correlation could easily be due to random chance and it is NOT statistically significant.
+- Neither of the two correaltion metrics reached the statistical significance at 0.05 level. Results suggest a 'possible' weak effect that may require larger sample size to detect.
+- The hypothesis has failed once again. 
 </details>
+
+
+  
 
