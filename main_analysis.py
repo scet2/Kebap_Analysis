@@ -22,6 +22,8 @@ stations = org_stations[['name', 'geometry']].copy()
 area = gpd.read_file('data/raw/storkøbenhavn.geojson')
 area = area.to_crs(epsg=epsg_dk)
 
+#area.to_file('data/raw/storkøbenhavn.geojson')
+
 print(f'we have with {len(stations)} stations to work with.')
 
 def plot_stations_map(stations, area):
@@ -66,11 +68,13 @@ kebap_places = kebap_places.to_crs(epsg=epsg_dk)
 print(f'we have with {len(kebap_places)} kebap places.')
 
 def plot_kebap_places(kebap_places, area):
+     '''Plot kebap restaurant locations on the study area boundary'''
+
      fig, ax = plt.subplots(figsize=(8, 6))
      area.plot(ax=ax,color='white', edgecolor='darkgreen', linewidth=3)
      kebap_places.plot(ax=ax,marker='.', color='limegreen', edgecolor='forestgreen', markersize=200, alpha =0.8)
      ax.set_title('Original Kebap Places Map')
-     plt.savefig('figures/org_kebap_places.png')
+     plt.savefig('figures/org_kebap_places_map.png')
      plt.show()
 
 #check for duplicate names to identify potential chain restaurants
@@ -92,6 +96,16 @@ places_to_delete= ["Roll N’ Eat", "Kebabi", "Virum Kebab house"]
 kebap_places = kebap_places[~kebap_places['name'].isin(places_to_delete)]
 
 print(f'We got {len(kebap_places)} kebap places left.')
+
+def plot_kebap_places_clean(kebap_places, area):
+     '''Plot the reamaining kebap restaurants on the study area boundary'''
+     fig, ax = plt.subplots(figsize=(8, 6))
+     area.plot(ax=ax,color='white', edgecolor='darkgreen', linewidth=3)
+     kebap_places.plot(ax=ax,marker='.', color='limegreen', edgecolor='forestgreen', markersize=200, alpha =0.8)
+     ax.set_title('Kebap Places Map')
+     plt.savefig('figures/kebap_places_map.png')
+     plt.show()
+
 
 #export cleaned dataset for further analysis
 #kebap_places.to_file('data/processed/kebap_places.geojson', driver='GeoJSON')
