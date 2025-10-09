@@ -2,7 +2,7 @@
 A spatial analysis project inverstigating wether kebab quality correlates with distance from train stations in Greater Copenhagen.
 
 ## Porject Overview
-Inspired by this Reddit post,[this post](https://www.reddit.com/r/gis/comments/1iph0yy/the_closer_to_the_railway_station_the_less_tasty/)I decided to test it out with real data from Greater Copenhagen area. <br>
+Inspired by this Reddit post, [this post](https://www.reddit.com/r/gis/comments/1iph0yy/the_closer_to_the_railway_station_the_less_tasty/) I decided to test it out with real data from Greater Copenhagen area. <br>
 This project combines:
 - Spatial analysis with QGIS and OpenStreetMap data
 - Data collection via Google Places API
