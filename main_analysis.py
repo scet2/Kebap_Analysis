@@ -1,9 +1,4 @@
 import geopandas as gpd
-import geoplot
-import geoplot.crs as gcrs
-import osmnx as ox
-import geopandas as gpd
-from shapely.geometry import box
 import matplotlib.pyplot as plt
 import pandas as pd
 from scipy.spatial.distance import euclidean
@@ -31,13 +26,12 @@ print(f'we have with {len(stations)} stations to work with.')
 
 def plot_stations_map(stations, area):
      '''Plot stations on the study area boundary'''
-     fig, ax = plt.subplots(figsize=(10, 8))
+     fig, ax = plt.subplots(figsize=(8, 6))
      area.plot(ax=ax,color='white', edgecolor='orange', linewidth=3)
      stations.plot(ax=ax,marker='.', color='tomato', edgecolor='crimson', markersize=200, alpha =0.8)
      ax.set_title('Original Stations Map')
-     plt.tight_layout()
+     plt.savefig('figures/org_stations_map.png')
      plt.show()
-     plt.savefig('outputs/org_stations_map.png')
 
 #stations located outside the study area boundary to be deleted
 st_to_delete = ['Lyngby Lokal', 'Værløse', 'Holte', 'Hareskov', 'Veksø','Stenløse', 'Egedal', 'Ølstykke', 'Hundige', 'Greve', 'Karlslunde', 
@@ -54,13 +48,12 @@ print(f'Deleted {len(st_to_delete)} stations. This gives us {len(stations)} stat
 
 def plot_clean_stations_map(stations, area):
      '''Plot reamaining stations on the study area boundary'''
-     fig, ax = plt.subplots(figsize=(10, 8))
+     fig, ax = plt.subplots(figsize=(8, 6))
      area.plot(ax=ax,color='white', edgecolor='orange', linewidth=3)
      stations.plot(ax=ax,marker='.', color='tomato', edgecolor='crimson', markersize=200, alpha =0.8)
      ax.set_title('Stations Map')
-     plt.tight_layout()
+     plt.savefig('figures/stations_map.png')
      plt.show()
-     plt.savefig('outputs/stations_map.png')
 
 #load kebap places data
 org_kebap_places = gpd.read_file('data/raw/original_kebap_places.geojson')
@@ -73,13 +66,12 @@ kebap_places = kebap_places.to_crs(epsg=epsg_dk)
 print(f'we have with {len(kebap_places)} kebap places.')
 
 def plot_kebap_places(kebap_places, area):
-     fig, ax = plt.subplots(figsize=(10, 8))
+     fig, ax = plt.subplots(figsize=(8, 6))
      area.plot(ax=ax,color='white', edgecolor='darkgreen', linewidth=3)
      kebap_places.plot(ax=ax,marker='.', color='limegreen', edgecolor='forestgreen', markersize=200, alpha =0.8)
      ax.set_title('Original Kebap Places Map')
-     plt.tight_layout()
+     plt.savefig('figures/org_kebap_places.png')
      plt.show()
-     plt.savefig('outputs/org_kebap_places.png')
 
 #check for duplicate names to identify potential chain restaurants
 #before removing the kebap places outside the area boundary make sure they are not part of a chain restaurant
@@ -177,9 +169,8 @@ def scatter_ratings_vs_distance(distance, ratings):
      plt.ylabel('Rating')
      plt.title('Kebap Restaurant Ratings vs Distance from Stations')
      plt.grid(alpha=0.5)
-     plt.tight_layout()
+     plt.savefig('figures/ratings_distance_scatter.png')
      plt.show()
-     plt.savefig('outputs/ratings_distance_scatter.png')
 
 #statistical analysis
 cor_s, p_val_s = stats.spearmanr(df['rating'], df['distance'])
