@@ -104,15 +104,5 @@ _Relationship between distance to nearest station (km) and Google rating. No cle
 - OpenStreetMap
 
 ## Project Structure
-kebab-analysis/ <br>
-├── data/<br>
-│   ├── raw/            # Original data files<br>
-│   └── processed/      # Cleaned datasets<br>
-│   └── outputs/        # Kebab Rating, Closest Station outputs<br>
-├── figures/            # Generated plots and maps<br>
-├── main_analysis.py    # Main analysis script<br>
-├── google_api.py       # Google Places API script<br>
-├── requirements.txt<br>
-└── README.md
 
   
