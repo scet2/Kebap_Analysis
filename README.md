@@ -15,7 +15,7 @@ This project combines:
 - Conclusion: The hypothesis does not hold for Greater Copenhagen. 
 
 ## Interactive Map
-[link to map]
+[View the interactive map here](https://scet2.github.io/Kebap_Analysis/qgis2web_2025_10_11-11_24_59_122720)
 
 ## Study Area Selection
 I chose Greater Copenhagen for several reasons:
