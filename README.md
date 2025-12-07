@@ -19,7 +19,7 @@ This project combines:
 
 ## Study Area Selection
 I chose Greater Copenhagen for several reasons:
-- Familiarity: As a resident of Denmark, I have local knowledge of the data
+- Familiarity: I have local knowledge of the data
 - Data availability: Good coverage in OpenStreetMap for both stations and restaurants
 - Urban diversity: Expanded from Copenhagen proper to include suburban areas for more varied density patterns<br>
 Initially, I begin with Copenhagen city, but the extreme density limited variability. You're almost always within walking distance to a station, thus I expanded to Greater Copenhagen to introduce more diverse urban patterns and capture restaurants at varying distances from stations. However all kebab places still fell within 2km of a station.<br>
