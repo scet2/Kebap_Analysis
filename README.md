@@ -81,8 +81,8 @@ For each kebab restaurant, I calculated the Euclidean distance to all 107 statio
 _Relationship between distance to nearest station (km) and Google rating. No clear pattern visible._
 
 **Correlation Coefficients:**
-- Spearman's ρ = 0.08 (p = 0.274)
-- Pearson's r = 0.119 (p = 0.104)
+- Spearman's ρ = 0.002 (p = 0.9797)
+- Pearson's r = -0.055 (p = 0.4528)
   
 **Interpretation:**
 - There is essentially no meaningful correlation between distance and rating, as both correlation coefficients are very weak (close to zero).
@@ -96,13 +96,5 @@ _Relationship between distance to nearest station (km) and Google rating. No cle
 - Distance range: Limited variability due to Copenhagen's density.
 - Rating bias: Google ratings may not perfectly reflect food quality
 - Other variables: rent prices, foot traffic, competition... 
-
-## Tools Used
-- Python (matplotlib, pandas, scipy, geopandas)
-- QGIS
-- Google Places API
-- OpenStreetMap
-
-## Project Structure
 
   
