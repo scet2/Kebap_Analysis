@@ -1,114 +1,114 @@
-osm_name,rating,review_count
-Kebabish,3.8,2492.0
-Yilmaz Döner Kebab,3.9,112.0
-Kebab Time,4.2,188.0
-King of Kebab,3.9,648.0
-Torvets Shawarma Kebab,3.5,113.0
-Amager Kebab 2001,4.0,208.0
-Kebap Mann,4.4,46.0
-Kebab Grill House,4.5,473.0
-Pølse og Grill,4.2,212.0
-Konya Kebab,3.8,373.0
-Kösem,3.9,1531.0
-Kebabistan,4.0,713.0
-Atlas Pizza Kebab,3.9,292.0
-Flamingo Kebab,4.0,375.0
-ZamZam Kebab,3.8,537.0
-Öz Konya Kebab,3.8,682.0
-Kebabistan 3,4.3,258.0
-Konya Kebab,3.9,1074.0
-Tåstrup Grill Kebab,4.1,383.0
-City Kebab,4.0,337.0
-Kebabland,3.9,227.0
-Vefa Kebab,4.5,222.0
-Naan Kebab and Sweets,3.6,136.0
-Kebabistan - HK,4.2,312.0
-Nemos Kebab,4.6,146.0
-Jernbane Durum & Kebab House,3.4,535.0
-Husum Kebab,4.3,103.0
-Istanbul Kebabhouse,4.2,179.0
-Star Midnight Kebab & Grill,3.7,141.0
-Shawarma Palace,2.5,206.0
-Chili grill kebab,4.8,416.0
-City Kebabhouse,3.5,90.0
-Emils Kebab,3.9,72.0
-Brønshøj Kebab,4.5,241.0
-Ishøj Grill,4.5,537.0
-Silas Kebab,4.2,343.0
-Kebaben,3.6,679.0
-Hvidovre Shawarma Grill,3.8,95.0
-Mirac Kebab,4.3,125.0
-Smiley's Kebab,4.3,66.0
-Station Kebab,4.1,121.0
-Sheiks Shawarma,4.1,705.0
-Madam Bum,4.1,63.0
-Quickstop Kebab,3.7,78.0
-Mina K,4.6,613.0
-Kebab på farten,4.5,2.0
-Kebabbar,4.2,71.0
-Morfars Kebab,,
-Kebabhjørnet,3.8,68.0
-Tadim Kebab,4.6,808.0
-Ørestad Kebab,4.1,400.0
-Fuldkorn Kebab,3.8,332.0
-Zeynos kebab,4.8,989.0
-Roll N’ Eat,3.6,444.0
-Kebabklubben,4.3,403.0
-AL Kebab,4.2,158.0
-Måløv Kebab,4.5,84.0
-Doner Kebab,3.7,2646.0
-Kebab House Vanløse,4.3,175.0
-Killer Kebab,4.5,868.0
-Patats Kebab & Grill,4.1,306.0
-Killer Kebab,4.5,868.0
-Mina Kebab Brønshøj,4.7,253.0
-Chili Albertslund,4.0,95.0
-Ørsteds Kebab,4.7,121.0
-Kebabbro,4.5,447.0
-Kebab huset,4.5,85.0
-City Kebab,4.3,301.0
-Berlin Döner Kopenhagen,4.1,404.0
-Super Kebab,4.7,170.0
-Mevlana Kebab Ishøj 2,4.5,204.0
-Istanbul Kebab Bar,4.3,333.0
-Berlin Gemüse Kebab,4.9,33826.0
-Tasty Kebab,4.5,150.0
-German Kebab,4.5,473.0
-Killer Kebab Borgergade,4.5,610.0
-Kebab King,4.2,248.0
-Stjerne Kebaben,4.6,69.0
-Berlin Döner Kebab,3.9,193.0
-Kebaba,4.6,133.0
-Kebab Stationen,4.8,57.0
-Lion Kebab,3.7,73.0
-Killer Kebab,4.2,133.0
-Kebabland,4.2,355.0
-Durum Bar,4.2,1116.0
-emdrup kebab,4.3,37.0
-Crazy kebab,4.2,260.0
-Ruten Kebab House,4.4,18.0
-KÖSK KEBAB FOOD,4.1,2495.0
-Brøndby Kebab grill,4.1,66.0
-Hellerup Kebab,4.1,14.0
-Torvets Shawarma House,3.5,113.0
-The Döner,3.8,396.0
-Elite Kebab,3.7,73.0
-Das Berlin Döner,4.6,98.0
-Ham Ham kebab,4.0,4.0
-Abu Kebab,3.6,31.0
-Måløv Kebab House,4.5,84.0
-MARRAKECH KEBAB GRIL,4.4,28.0
-AROS KEBAB,4.5,28.0
-Kebabhytten Zoo,4.4,25396.0
-Cafe Kebabhouse,3.6,210.0
-Pita Kebab,4.8,125.0
-Killer Kebab,4.5,610.0
-Durum Kebab,4.9,64.0
-Kebab På Farten Event,4.5,2.0
-Stations Kebab,4.4,196.0
-Metro Kebaben,4.1,26.0
-Mr. Kebab,3.9,32.0
-Kebab-Hytten,5.0,1.0
-DORO DONER,4.4,10.0
-Doro Döner,4.4,10.0
-Kebab Lab,4.2,28.0
+,osm_name,rating,review_count,adjusted_rating
+0,Kebabish,3.8,2492.0,3.6783844147064135
+1,Yilmaz Döner Kebab,3.9,112.0,2.247818383864581
+2,Kebab Time,4.2,188.0,2.9205200578989317
+3,King of Kebab,3.9,648.0,3.4600967497079544
+4,Torvets Shawarma Kebab,3.5,113.0,2.025067394688803
+5,Amager Kebab 2001,4.0,208.0,2.8654068009007263
+6,Kebap Mann,4.4,46.0,1.5782153747989183
+7,Kebab Grill House,4.5,473.0,3.8324044566366533
+8,Pølse og Grill,4.2,212.0,3.0247900701584416
+9,Konya Kebab,3.8,373.0,3.1126249740102323
+10,Kösem,3.9,1531.0,3.700837109179833
+11,Kebabistan,4.0,713.0,3.5856702396752493
+12,Atlas Pizza Kebab,3.9,292.0,3.0419243675878795
+13,Flamingo Kebab,4.0,375.0,3.2795643183861443
+14,ZamZam Kebab,3.8,537.0,3.294593503892915
+15,Öz Konya Kebab,3.8,682.0,3.390452159138863
+16,Kebabistan 3,4.3,258.0,3.259326507082704
+17,Konya Kebab,3.9,1074.0,3.622136338661185
+18,Tåstrup Grill Kebab,4.1,383.0,3.3742227189294542
+19,City Kebab,4.0,337.0,3.214304351994424
+20,Kebabland,3.9,227.0,2.8617146224932504
+21,Vefa Kebab,4.5,222.0,3.2821040251614484
+22,Naan Kebab and Sweets,3.6,136.0,2.242566021334833
+23,Kebabistan - HK,4.2,312.0,3.3226886582044637
+24,Nemos Kebab,4.6,146.0,2.9409219941429363
+25,Jernbane Durum & Kebab House,3.4,535.0,2.9463978553225276
+26,Husum Kebab,4.3,103.0,2.389761054779844
+27,Istanbul Kebabhouse,4.2,179.0,2.8764844193562564
+28,Star Midnight Kebab & Grill,3.7,141.0,2.336020920186403
+29,Shawarma Palace,2.5,206.0,1.7864841444078372
+30,Chili grill kebab,4.8,416.0,4.00642061316281
+31,City Kebabhouse,3.5,90.0,1.8284097139806434
+32,Emils Kebab,3.9,72.0,1.8200690981337284
+33,Brønshøj Kebab,4.5,241.0,3.353634236975768
+34,Ishøj Grill,4.5,537.0,3.9013731649098644
+35,Silas Kebab,4.2,343.0,3.3866055832236452
+36,Kebaben,3.6,679.0,3.21050646836725
+37,Hvidovre Shawarma Grill,3.8,95.0,2.036060144572738
+38,Mirac Kebab,4.3,125.0,2.592292412827282
+39,Smiley's Kebab,4.3,66.0,1.9138092637148891
+40,Station Kebab,4.1,121.0,2.439806760008162
+41,Sheiks Shawarma,4.1,705.0,3.670984984967188
+42,Madam Bum,4.1,63.0,1.7780115165749895
+43,Quickstop Kebab,3.7,78.0,1.8006272626894768
+44,Mina K,4.6,613.0,4.0549254862137465
+45,Kebab på farten,4.5,2.0,0.111250599546284
+46,Kebabbar,4.2,71.0,1.9452812746688013
+47,Morfars Kebab,,,
+48,Kebabhjørnet,3.8,68.0,1.719605818349907
+49,Tadim Kebab,4.6,808.0,4.174284868794678
+50,Ørestad Kebab,4.1,400.0,3.3997941464490378
+51,Fuldkorn Kebab,3.8,332.0,3.044633716915949
+52,Zeynos kebab,4.8,989.0,4.430798577379058
+53,Roll N’ Eat,3.6,444.0,3.0366584532985015
+54,Kebabklubben,4.3,403.0,3.5701352742773653
+55,AL Kebab,4.2,158.0,2.7609175703187567
+56,Måløv Kebab,4.5,84.0,2.272676730700667
+57,Doner Kebab,3.7,2646.0,3.588272191922911
+58,Kebab House Vanløse,4.3,175.0,2.9238861190744116
+59,Killer Kebab,4.5,868.0,4.109837638781337
+60,Patats Kebab & Grill,4.1,306.0,3.2303749695280843
+61,Killer Kebab,4.5,868.0,4.109837638781337
+62,Mina Kebab Brønshøj,4.7,253.0,3.5454565593492133
+63,Chili Albertslund,4.0,95.0,2.143102398093865
+64,Ørsteds Kebab,4.7,121.0,2.796563516764919
+65,Kebabbro,4.5,447.0,3.799623561211824
+66,Kebab huset,4.5,85.0,2.2859741830546927
+67,City Kebab,4.3,301.0,3.3760121920773427
+68,Berlin Döner Kopenhagen,4.1,404.0,3.405551234659118
+69,Super Kebab,4.7,170.0,3.165943269947172
+70,Mevlana Kebab Ishøj 2,4.5,204.0,3.205587000564262
+71,Istanbul Kebab Bar,4.3,333.0,3.4471737079703026
+72,Berlin Gemüse Kebab,4.9,33826.0,4.8880900268564424
+73,Tasty Kebab,4.5,150.0,2.9049491426308
+74,German Kebab,4.5,473.0,3.8324044566366533
+75,Killer Kebab Borgergade,4.5,610.0,3.9644775099807377
+76,Kebab King,4.2,248.0,3.1528008340746174
+77,Stjerne Kebaben,4.6,69.0,2.0976942287898415
+78,Berlin Döner Kebab,3.9,193.0,2.733577770096773
+79,Kebaba,4.6,133.0,2.8408384021422783
+80,Kebab Stationen,4.8,57.0,1.964162549545957
+81,Lion Kebab,3.7,73.0,1.7395541843193636
+82,Killer Kebab,4.2,133.0,2.593970652722325
+83,Kebabland,4.2,355.0,3.4089158300837963
+84,Durum Bar,4.2,1116.0,3.9112229250410184
+85,emdrup kebab,4.3,37.0,1.3347336875452802
+86,Crazy kebab,4.2,260.0,3.189491023829667
+87,Ruten Kebab House,4.4,18.0,0.7920465239966269
+88,KÖSK KEBAB FOOD,4.1,2495.0,3.9689236375020998
+89,Brøndby Kebab grill,4.1,66.0,1.824920374826
+90,Hellerup Kebab,4.1,14.0,0.5989707322451916
+91,Torvets Shawarma House,3.5,113.0,2.025067394688803
+92,The Döner,3.8,396.0,3.145664943911517
+93,Elite Kebab,3.7,73.0,1.7395541843193636
+94,Das Berlin Döner,4.6,98.0,2.4997267349676506
+95,Ham Ham kebab,4.0,4.0,0.18960318684001154
+96,Abu Kebab,3.6,31.0,0.9867900939353392
+97,Måløv Kebab House,4.5,84.0,2.272676730700667
+98,MARRAKECH KEBAB GRIL,4.4,28.0,1.1185581507842626
+99,AROS KEBAB,4.5,28.0,1.1438975173000996
+100,Kebabhytten Zoo,4.4,25396.0,4.385768419477664
+101,Cafe Kebabhouse,3.6,210.0,2.5859852159373027
+102,Pita Kebab,4.8,125.0,2.8934972321043904
+103,Killer Kebab,4.5,610.0,3.9644775099807377
+104,Durum Kebab,4.9,64.0,2.1433493219226007
+105,Kebab På Farten Event,4.5,2.0,0.111250599546284
+106,Stations Kebab,4.4,196.0,3.0980275607240975
+107,Metro Kebaben,4.1,26.0,0.986181342503788
+108,Mr. Kebab,3.9,32.0,1.0934556826345938
+109,Kebab-Hytten,5.0,1.0,0.06467875043905387
+110,DORO DONER,4.4,10.0,0.48000730445038914
+111,Doro Döner,4.4,10.0,0.48000730445038914
+112,Kebab Lab,4.2,28.0,1.0678794177525883

@@ -47,9 +47,21 @@ for idx, row in kebap.iterrows():
     time.sleep(0.1)  # Small delay 
 
 # Convert to DataFrame
-kebap_df = pd.DataFrame(all_kebap_data)
+df = pd.DataFrame(all_kebap_data)
+
+#get global average
+global_avg = df['rating'].sum() / df['review_count'].sum()
+
+#credibility constant, 25th percentile of review counts
+K = df['review_count'].quantile(0.25)
+
+#calculate prior claims
+C = K* global_avg
+
+#adjust ratings to the bayesian average
+df['adjusted_rating'] = (df['review_count'] * df['rating'] + K * global_avg) / (df['review_count'] + K)
 
 # Save
-kebap_df.to_csv('data/results/kebap_with_ratings.csv', index=False)
+df.to_csv('data/results/kebap_with_ratings.csv', index=False)
 
-print(f"Total kebap places: {len(kebap_df)}")
+print(f"Total kebap places: {len(df)}")
