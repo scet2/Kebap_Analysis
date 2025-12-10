@@ -7,15 +7,11 @@ This project combines:
 - Spatial analysis with Python
 - Data extraction from QGIS 
 - Data collection via Google Places API
-- Interactive web map visualization
 
 ### Key Findings:
 - Sample size: 112 kebab restaurants, 107 train/metro stations
 - Correlation: No statistically significant relationship found (p > 0.05)
 - Conclusion: The hypothesis does not hold for Greater Copenhagen. 
-
-## Interactive Map
-[View the interactive map here](https://scet2.github.io/Kebap_Analysis/qgis2web_2025_10_11-11_24_59_122720)
 
 ## Study Area Selection
 I chose Greater Copenhagen for several reasons:
@@ -63,18 +59,18 @@ Before cleaning/filtering
 
 **Rating Collection:**
 - Used Google Places API to automatically fetch current ratings for each restaurant
-- Adjusted the ratings with the bayesian average to account for restaurant with higher reviews
+- Adjusted the ratings by applying a Bayesian average to get more reliable scores from restaurants with limited reviews
 - Dropped entries with missing rating data (1 restaurant)
 
 ### 3. Distance Calculation
 **Metric Choice: Euclidean Distance** <br>
-While walking distance would be more realistic for actual customer travel, it would also be computationally expensive. Additionally, in Copenhagen's dense urban environment the Euclidean distance will highly likely provide similar numbers. The walking distance would give more precise absolute values but the ranking of which station is closest remains consistent across metrics. And since the analysis focuses on relative proximity rather than absolute distances, Euclidean distance is appropriate and computationally efficient. 
+I opted for Euclidan distance to keep things simple. Given Copenhagen's dense urban environment the Euclidean distance will highly likely provide similar numbers. The walking distance would give more precise absolute values but the ranking of which station is closest should remain consistent across metrics. And since the analysis focuses on relative proximity rather than absolute distances, I found Euclidean distance to be appropriate and computationally efficient. 
 <br>
 For each kebab restaurant, I calculated the Euclidean distance to all 107 stations and identified the closest one.
 
 ### 4. Statistical Analysis
 **Correlation Tests:**
-- Spearman's Rank and Pearson's Correlation were both applied to assess wether distance from nearest station correlates with restaurant rating.
+- Spearman's Rank and Pearson's Correlation were both applied to assess wether distance from nearest station correlates with the restaurant's (adjusted) rating.
 
 ## Results
 <img src="figures/ratings_distance_scatter.png" alt="Scatter plot" width="600">
@@ -92,10 +88,10 @@ _Relationship between distance to nearest station (km) and Google rating. No cle
 -  Any observed correlation could easily be due to random chance.
 -  The hypothesis remains unproven in this context.
 
-## Limitations
+**Limitations**
 - Sample size: 112 Restaurants may be insufficient to detect any effect.
 - Distance range: Limited variability due to Copenhagen's density.
-- Rating bias: Google ratings may not perfectly reflect food quality
+- Rating bias: Google ratings may not perfectly reflect food quality.
 - Other variables: rent prices, foot traffic, competition... 
 
   
