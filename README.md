@@ -63,6 +63,7 @@ Before cleaning/filtering
 
 **Rating Collection:**
 - Used Google Places API to automatically fetch current ratings for each restaurant
+- Adjusted the ratings with the bayesian average to account for restaurant with higher reviews
 - Dropped entries with missing rating data (1 restaurant)
 
 ### 3. Distance Calculation
